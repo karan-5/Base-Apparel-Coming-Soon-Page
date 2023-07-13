@@ -1,0 +1,102 @@
+html{
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+body{
+    -webkit-font-smoothing: antialiased;
+    background-color: Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
+    background-image: url(images/bg-pattern-desktop.svg);
+    margin: 0%
+}
+.wrapper{
+    display: flex;
+    font-family: Josefin Sans;  
+}
+.form-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    flex-basis: 60%;
+}
+.wrapper-2{
+    padding: 3rem 14rem 3rem 8rem;
+}
+.header{
+}
+.header-1{
+    font-size: 6rem;
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+    margin-bottom: 0%;
+    letter-spacing: 1rem;
+}
+.header-2{
+    margin-top: 0%;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 1.5rem;
+}
+.description{
+    font-weight: 700;
+    color: hsl(0, 36%, 70%);
+}
+.input-section{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    position: relative; 
+}
+#email-field{
+    padding-left: 1.5rem;
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 30px;
+    flex-basis: 90%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: hsl(0, 36%, 70%);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+#submit-btn{
+    background: url("../images/icon-arrow.svg") center / 0.7rem no-repeat,
+    linear-gradient(135deg, #f8bfbf 0%, #ee8c8c 100%);
+    border: none;
+    box-shadow: hsl(0, 93%, 68%) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    border-radius: 2rem;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    position: absolute;
+    inset: 0 0 0 330px;
+} 
+.submit-btn--icon{
+}
+.image-card{
+    flex-basis: 40%;
+   
+}
+@media (max-width:375px) {
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        font-family: Josefin Sans;  
+    }
+    .form-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        flex-basis: 60%;
+    }
+    .wrapper-2{
+        padding: 3rem 14rem 3rem 8rem;
+    }
+}
